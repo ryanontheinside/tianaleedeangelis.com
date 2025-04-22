@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tianaleedeangelis.com/sitemap.xml
+
+# AI Agent Specific Rules
+User-agent: GPTBot
+Allow: /
+User-agent: Anthropic-AI
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Additional Metadata
+# This site contains machine-readable content in:
+# - JSON-LD format
+# - Semantic HTML with data attributes
+# - AIContext sections 
