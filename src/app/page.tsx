@@ -45,15 +45,16 @@ export default function Home() {
           className={`transition-all duration-1000 ${fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'} mb-20 flex flex-col items-center text-center`}
           style={{ opacity: 1 }}
         >
-          <div className="mb-8 image-container" style={{ zIndex: 50 }}>
+          <div className="mb-8 image-container relative group" style={{ zIndex: 50 }}>
             <Image 
               src="/images/tiana-profile.jpg" 
               alt="Tiana Lee DeAngelis"
               width={256}
               height={256}
-              className="rounded-full border-4 border-accent"
+              className="rounded-full border-4 border-accent transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg"
               priority
             />
+            <div className="absolute inset-0 rounded-full bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md -z-10"></div>
           </div>
           
           <AnimatedText
