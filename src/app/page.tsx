@@ -138,7 +138,7 @@ export default function Home() {
         </section>
 
         <section className="mb-20 text-center section-dark overflow-hidden">
-          <div style={{ transform: `translateY(${calculateParallax(0.1)}px)` }}>
+          <div>
             <AnimatedText
               text="Book an Appointment"
               tag="h2"
