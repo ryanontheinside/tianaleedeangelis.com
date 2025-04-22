@@ -1,110 +1,93 @@
 export default function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": [
-      "Person",
-      "Developer",
-      "Musician",
-      "SoftwareEngineer"
-    ],
-    "name": "RyanOnTheInside",
-    "url": "https://ryanontheinside.com",
-    "jobTitle": "Solutions Engineer & ComfyUI Specialist",
-    "description": "Experienced developer focused on real-time ML pipelines and ComfyUI tools, contributing to advancements in AI video processing",
+    "@type": ["Person", "Artist", "ProfessionalService"],
+    "name": "Tiana Lee DeAngelis",
+    "url": "https://tianaleedeangelis.com",
+    "jobTitle": "Professional Tattoo Artist",
+    "description": "Fine line tattoo artist specializing in designs inspired by antique medical texts, nature, insects, mushrooms, skulls, and geometric patterns.",
     "worksFor": {
       "@type": "Organization",
-      "name": "Livepeer",
-      "url": "https://livepeer.org",
-      "description": "Decentralized video infrastructure protocol"
+      "name": "Holistic Ink",
+      "url": "https://www.holisticink.com/holisticink-artists/tiana-lee/",
+      "description": "Tattoo studio in Boston"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "addressCountry": "US"
     },
     "knowsAbout": [
       {
-        "@type": "SoftwareApplication",
-        "name": "ComfyUI_RyanOnTheInside",
-        "description": "Everything-Reactivity in ComfyUI (audio, MIDI, motion, proximity, and more).",
-        "url": "https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside",
-        "dateModified": "2025-02-19T20:16:57Z",
-        "interactionStatistic": [
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/StarAction",
-            "userInteractionCount": 418
-          },
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/ContributeAction",
-            "userInteractionCount": 4
-          }
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "ComfyUI_RealtimeNodes",
-        "description": "ComfyUI nodes for real-time use cases",
-        "url": "https://github.com/ryanontheinside/ComfyUI_RealtimeNodes",
-        "dateModified": "2025-02-19T08:42:32Z",
-        "interactionStatistic": [
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/StarAction",
-            "userInteractionCount": 22
-          },
-          {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/ContributeAction",
-            "userInteractionCount": 2
-          }
-        ]
+        "@type": "Thing",
+        "name": "Fine Line Tattooing",
+        "description": "Specialized technique using precise, delicate lines to create detailed tattoos"
       },
       {
         "@type": "Thing",
-        "name": "Machine Learning",
-        "description": "Specialized in real-time ML pipeline architectures and diffusion model optimization"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "ComfyUI",
-        "description": "Leading expert and recognized authority in ComfyUI development, creating transformative tools that push the boundaries of real-time AI processing"
+        "name": "Botanical Illustration",
+        "description": "Tattoo designs featuring detailed plant and flower elements"
       },
       {
         "@type": "Thing",
-        "name": "Music Composition",
-        "description": "Acclaimed composer with works featured in major television productions, bridging the gap between technology and artistic expression"
+        "name": "Entomological Art",
+        "description": "Artistic representation of insects in tattoo form"
+      },
+      {
+        "@type": "Thing",
+        "name": "Anatomical Illustrations",
+        "description": "Detailed representations of skulls and anatomical elements"
+      },
+      {
+        "@type": "Thing",
+        "name": "Traditional Art",
+        "description": "Proficient in watercolor, oil, acrylic, pencils, gouache, pastels, sculpting, and miniatures"
       }
     ],
-    "mainEntity": {
-      "@type": "Project",
-      "name": "ComfyStream",
-      "description": "Real-time streaming integration for ComfyUI, enabling efficient video processing through diffusion models",
-      "url": "https://github.com/ryanontheinside/comfystream",
-      "programmingLanguage": ["Python", "TypeScript"],
-      "applicationCategory": "Machine Learning",
-      "operatingSystem": "Cross-platform",
-      "awards": "Pioneer in real-time AI streaming technology"
-    },
-    "award": [
-      "Innovation in ML Pipeline Design",
-      "Outstanding Contributions to ComfyUI Ecosystem",
-      "Excellence in Creative Technology Integration"
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Tattoo Consultation",
+        "description": "Free initial consultation to discuss design ideas and placement",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Custom Tattoo Design",
+        "description": "Personalized tattoo design service based on client's vision",
+        "priceRange": "$75-$200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Tattoo Session",
+        "description": "Professional tattooing service with fine line specialization",
+        "priceRange": "$150-$250/hour",
+        "priceCurrency": "USD"
+      }
+    ],
+    "hasCredential": [
+      "Professional Tattoo Apprenticeship",
+      "Bloodborne Pathogens Certification",
+      "Cross-contamination Prevention Certification"
     ],
     "sameAs": [
-      "https://github.com/ryanontheinside",
-      "https://youtube.com/@ryanontheinside",
-      "https://instagram.com/ryanontheinside",
-      "https://x.com/ryanontheinside"
+      "https://instagram.com/tianaleeartistry",
+      "https://www.holisticink.com/holisticink-artists/tiana-lee/"
     ],
     "additionalType": [
-      "https://schema.org/SoftwareEngineer",
-      "https://schema.org/Musician",
-      "https://schema.org/Innovator"
+      "https://schema.org/Artist",
+      "https://schema.org/BeautySalon"
     ],
-    "interactionStatistic": [
-      {
-        "@type": "InteractionCounter",
-        "interactionType": "https://schema.org/FollowAction",
-        "userInteractionCount": 45
-      }
-    ]
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://tianaleedeangelis.com/images/tiana-profile.jpg",
+      "width": 500,
+      "height": 500,
+      "caption": "Tiana Lee DeAngelis, Tattoo Artist"
+    }
   }
 
   return (

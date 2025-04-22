@@ -30,7 +30,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Link',
-            value: '<https://ryanontheinside.com/:path*>; rel="canonical"'
+            value: '<https://tianaleedeangelis.com/:path*>; rel="canonical"'
           },
           {
             key: 'Last-Modified',
