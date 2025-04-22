@@ -117,7 +117,8 @@ export default function TiltCard({
         style={{
           transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg) scale(${transform.scale})`,
           transition: `transform ${transitionSpeed}ms ease-out`,
-          transformStyle: 'preserve-3d'
+          transformStyle: 'preserve-3d',
+          opacity: 1
         }}
       >
         {children}
@@ -130,7 +131,8 @@ export default function TiltCard({
             background: `radial-gradient(circle at ${transform.glareX}% ${transform.glareY}%, ${glareColor} 0%, transparent 80%)`,
             opacity: transform.glareOpacity,
             transition: `opacity ${transitionSpeed}ms ease-out`,
-            mixBlendMode: 'overlay'
+            mixBlendMode: 'overlay',
+            zIndex: 10
           }}
         />
       </div>

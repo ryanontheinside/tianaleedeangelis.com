@@ -51,8 +51,8 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes wave {
@@ -164,10 +164,12 @@ a {
   background: linear-gradient(90deg, rgba(212,175,55,0) 0%, rgba(252,234,187,0.5) 50%, rgba(212,175,55,0) 100%);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
+  display: inline-block;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.8s ease forwards;
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
 }
 
 .stagger-item:nth-child(1) { animation-delay: 0.1s; }

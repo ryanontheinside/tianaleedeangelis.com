@@ -83,7 +83,7 @@ export default function AnimatedText({
       case 'reveal':
         return 'animate-fade-in'
       case 'gradient':
-        return 'bg-clip-text text-transparent bg-gradient-to-r from-accent to-[#FCEABB] animate-shimmer'
+        return 'bg-clip-text text-transparent bg-gradient-to-r from-accent to-[#FCEABB] animate-shimmer opacity-100'
       default:
         return ''
     }
