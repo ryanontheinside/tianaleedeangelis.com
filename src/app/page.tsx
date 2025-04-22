@@ -47,7 +47,7 @@ export default function Home() {
           </p>
           <Link 
             href="/gallery" 
-            className="btn btn-primary inline-block font-gothic"
+            className="btn btn-outline inline-block font-gothic"
           >
             View Gallery
           </Link>
@@ -95,7 +95,7 @@ export default function Home() {
         </p>
         <Link 
           href="/booking" 
-          className="btn btn-accent inline-block font-gothic font-bold"
+          className="btn btn-outline inline-block font-gothic font-bold"
         >
           Book Now
         </Link>

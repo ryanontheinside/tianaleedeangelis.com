@@ -46,8 +46,8 @@ export default function Gallery() {
               onClick={() => setActiveCategory(category.id)}
               className={`px-4 py-2 rounded-full font-gothic transition-colors
                 ${activeCategory === category.id 
-                  ? 'bg-primary text-light' 
-                  : 'bg-secondary/40 hover:bg-secondary/60 text-light hover:text-accent'}`}
+                  ? 'border-2 border-accent text-[#fceabb]' 
+                  : 'border-2 border-secondary/60 text-light hover:border-accent hover:text-[#fceabb]'}`}
             >
               {category.name}
             </button>

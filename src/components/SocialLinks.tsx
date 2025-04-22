@@ -7,12 +7,12 @@ export default function SocialLinks({ className = '' }: { className?: string }) 
         Instagram
       </a>
       <a href="https://www.holisticink.com/holisticink-artists/tiana-lee/" 
-         className="btn btn-primary transition-colors duration-300"
+         className="btn btn-outline transition-colors duration-300"
          target="_blank" rel="noopener noreferrer">
         Holistic Ink
       </a>
       <a href="mailto:booking@tianaleedeangelis.com" 
-         className="btn btn-accent transition-colors duration-300"
+         className="btn btn-outline transition-colors duration-300"
          target="_blank" rel="noopener noreferrer">
         Email
       </a>

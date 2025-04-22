@@ -79,7 +79,7 @@ export default function Booking() {
             <p className="mb-6">Your booking inquiry has been received. I'll contact you soon to discuss your tattoo idea.</p>
             <button 
               onClick={() => setSubmitted(false)}
-              className="btn btn-accent font-gothic"
+              className="btn btn-outline font-gothic"
             >
               Submit Another Inquiry
             </button>
@@ -206,7 +206,7 @@ export default function Booking() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`btn btn-primary font-gothic w-full md:w-auto ${isSubmitting ? 'opacity-70' : ''}`}
+              className={`btn btn-outline font-gothic w-full md:w-auto ${isSubmitting ? 'opacity-70' : ''}`}
             >
               {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
             </button>
