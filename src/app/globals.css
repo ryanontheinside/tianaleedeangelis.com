@@ -161,10 +161,13 @@ a {
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, rgba(212,175,55,0) 0%, rgba(252,234,187,0.5) 50%, rgba(212,175,55,0) 100%);
+  background: linear-gradient(90deg, rgba(212,175,55,0.7) 0%, rgba(252,234,187,0.9) 50%, rgba(212,175,55,0.7) 100%);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
   display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .animate-fade-in {

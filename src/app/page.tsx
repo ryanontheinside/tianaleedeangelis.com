@@ -43,7 +43,7 @@ export default function Home() {
         <section 
           className={`transition-all duration-1000 ${fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'} mb-20 flex flex-col items-center text-center`}
         >
-          <div className="mb-8 relative w-64 h-64 animate-float">
+          <div className="mb-8 relative w-64 h-64 animate-float" style={{ opacity: 1 }}>
             <TiltCard 
               maxTilt={15} 
               glareOpacity={0.15}
@@ -66,6 +66,7 @@ export default function Home() {
             tag="h1"
             animation="gradient"
             className="text-6xl font-gothic font-bold mb-4"
+            speed="slow"
           />
           
           <AnimatedText
@@ -73,7 +74,7 @@ export default function Home() {
             tag="h2"
             animation="reveal"
             delay={300}
-            className="text-2xl text-accent mb-6"
+            className="text-2xl text-accent mb-6 opacity-100"
           />
           
           <p className="text-xl max-w-2xl mb-6 animate-fade-in" style={{ animationDelay: '600ms' }}>

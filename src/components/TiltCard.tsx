@@ -118,7 +118,9 @@ export default function TiltCard({
           transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg) scale(${transform.scale})`,
           transition: `transform ${transitionSpeed}ms ease-out`,
           transformStyle: 'preserve-3d',
-          opacity: 1
+          opacity: 1,
+          position: 'relative',
+          zIndex: 1
         }}
       >
         {children}
