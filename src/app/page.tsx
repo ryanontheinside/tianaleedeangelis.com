@@ -94,7 +94,7 @@ export default function Home() {
             <AnimatedText
               text="The Art"
               tag="h2"
-              animation="typewriter"
+              // animation="typewriter"
               className="text-3xl font-gothic font-bold mb-6 text-primary"
             />
             
@@ -144,7 +144,7 @@ export default function Home() {
             <AnimatedText
               text="Book an Appointment"
               tag="h2"
-              animation="wave"
+              // animation="wave"
               speed="medium"
               className="text-3xl font-gothic font-bold mb-6 text-primary"
             />
