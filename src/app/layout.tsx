@@ -21,6 +21,7 @@ const sans = EB_Garamond({
 export const metadata: Metadata = {
   title: 'Tiana Lee DeAngelis - Tattoo Artist',
   description: 'Portfolio and booking information for Tiana Lee DeAngelis, professional tattoo artist at Holistic Ink specializing in fine line work inspired by antique medical texts and nature',
+  metadataBase: new URL('https://tianaleedeangelis.com'),
   keywords: ['tattoo', 'tattoo artist', 'Tiana Lee DeAngelis', 'Holistic Ink', 'fine line tattoo', 'botanical tattoo', 'insects', 'mushrooms', 'Boston tattoo'],
   authors: [{ name: 'Tiana Lee DeAngelis' }],
   openGraph: {
@@ -40,15 +41,23 @@ export const metadata: Metadata = {
     title: 'Tiana Lee DeAngelis - Tattoo Artist',
     description: 'Professional tattoo artist at Holistic Ink specializing in fine line designs inspired by nature, antique medical illustrations, and geometric patterns',
     creator: '@tianaleedeangelis',
-    images: ['/og-image.png'],
+    images: ['/og-image.png', '/favicon/web-app-manifest-512x512.png'],
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: '/favicon/favicon.ico', sizes: 'any' },
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    other: [
+      { rel: 'manifest', url: '/favicon/site.webmanifest' },
+      { rel: 'icon', url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
   },
   verification: {
     // Get this from Google Search Console: https://search.google.com/search-console

@@ -21,7 +21,7 @@ export default function About() {
             <h2 className="text-3xl font-gothic mb-4 text-primary">My Story</h2>
             <div className="space-y-4">
               <p>
-                I'm Tiana Lee DeAngelis, a tattoo artist based in Boston, specializing in fine line work inspired by antique medical texts, nature, and geometric designs. My journey in tattooing began with a lifelong passion for art and drawing, which evolved into a professional career after completing a formal apprenticeship.
+                I'm Tiana Lee DeAngelis, but you can call me Tina! I'm a tattoo artist based in Boston, specializing in fine line work inspired by antique medical texts, nature, and geometric designs. My journey in tattooing began with a lifelong passion for art and drawing, which evolved into a professional career after completing a formal apprenticeship.
               </p>
               <p>
                 Before focusing on tattooing, I honed my skills across multiple mediums including watercolor, oil, acrylic, pencils, gouache, pastels, sculpting, and miniatures. This diverse artistic background gives me a unique perspective and versatility in my approach to tattoo design.
