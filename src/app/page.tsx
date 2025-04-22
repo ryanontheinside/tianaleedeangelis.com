@@ -42,23 +42,17 @@ export default function Home() {
       <div className="container mx-auto px-6 py-16">
         <section 
           className={`transition-all duration-1000 ${fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'} mb-20 flex flex-col items-center text-center`}
+          style={{ opacity: 1 }}
         >
-          <div className="mb-8 relative w-64 h-64 animate-float" style={{ opacity: 1 }}>
-            <TiltCard 
-              maxTilt={15} 
-              glareOpacity={0.15}
-              className="w-full h-full rounded-full overflow-hidden"
-            >
-              <div className="relative w-full h-full border-4 border-accent">
-                <Image 
-                  src="/images/tiana-profile.jpg" 
-                  alt="Tiana Lee DeAngelis" 
-                  fill 
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </TiltCard>
+          <div className="mb-8 image-container" style={{ zIndex: 50 }}>
+            <Image 
+              src="/images/tiana-profile.jpg" 
+              alt="Tiana Lee DeAngelis"
+              width={256}
+              height={256}
+              className="rounded-full border-4 border-accent"
+              priority
+            />
           </div>
           
           <AnimatedText

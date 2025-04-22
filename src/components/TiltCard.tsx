@@ -107,7 +107,11 @@ export default function TiltCard({
       className={`relative overflow-hidden ${className}`}
       style={{
         perspective: `${perspective}px`,
-        transformStyle: 'preserve-3d'
+        transformStyle: 'preserve-3d',
+        zIndex: 5,
+        height: '100%',
+        width: '100%',
+        display: 'block'
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -120,7 +124,9 @@ export default function TiltCard({
           transformStyle: 'preserve-3d',
           opacity: 1,
           position: 'relative',
-          zIndex: 1
+          zIndex: 1,
+          height: '100%',
+          width: '100%'
         }}
       >
         {children}
