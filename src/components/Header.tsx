@@ -15,11 +15,16 @@ export default function Header() {
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled)
       }
+      
+      // Close menu on scroll
+      if (menuOpen) {
+        setMenuOpen(false)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [scrolled])
+  }, [scrolled, menuOpen])
 
   const isActive = (path: string) => pathname === path
 
@@ -72,10 +77,10 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation Overlay */}
-        <div className={`fixed inset-0 bg-secondary/95 backdrop-blur-lg flex flex-col items-center justify-center transition-all duration-500 md:hidden ${
+        <div className={`fixed inset-0 bg-secondary/95 backdrop-blur-lg flex items-center justify-center transition-all duration-500 md:hidden ${
           menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-6 py-4">
             {['Home', 'Gallery', 'Booking', 'About'].map((item, index) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`
               const active = isActive(path)
@@ -85,7 +90,7 @@ export default function Header() {
                   key={item} 
                   href={path}
                   onClick={() => setMenuOpen(false)}
-                  className={`text-2xl font-gothic relative group ${
+                  className={`text-xl font-gothic relative group ${
                     active ? 'text-accent' : 'text-light hover:text-accent'
                   }`}
                 >
