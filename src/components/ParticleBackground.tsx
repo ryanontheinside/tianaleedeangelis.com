@@ -164,7 +164,7 @@ export default function ParticleBackground({
   }, [particleColor, particleCount, particleSpeed, interactive])
   
   return (
-    <div className={`absolute inset-0 -z-10 overflow-hidden ${className}`}>
+    <div className={`absolute inset-0 -z-10 overflow-hidden opacity-70 pointer-events-none ${className}`}>
       <canvas 
         ref={canvasRef} 
         className="w-full h-full"

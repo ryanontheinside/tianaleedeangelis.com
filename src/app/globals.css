@@ -60,8 +60,17 @@
   50% { transform: translateY(-10px); }
 }
 
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
 .animate-wave {
   animation: wave 0.5s ease-in-out;
+}
+
+.animate-scroll-text {
+  animation: scrollText 20s linear infinite;
 }
 
 body {
