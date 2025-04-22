@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${
       scrolled ? 'bg-secondary/95 backdrop-blur-lg shadow-lg py-2' : 'bg-secondary/80 backdrop-blur-sm py-4'
-    }`}>
+    } ${menuOpen ? 'h-auto' : ''}`}>
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-gothic font-bold relative group">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-[#FCEABB] transition-all duration-300">
@@ -76,33 +76,33 @@ export default function Header() {
           })}
         </div>
 
-        {/* Mobile Navigation Overlay */}
-        <div className={`fixed inset-0 bg-secondary/95 backdrop-blur-lg flex items-center justify-center transition-all duration-500 md:hidden ${
-          menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}>
-          <div className="flex flex-col items-center gap-6 py-4">
-            {['Home', 'Gallery', 'Booking', 'About'].map((item, index) => {
-              const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`
-              const active = isActive(path)
-              
-              return (
-                <Link 
-                  key={item} 
-                  href={path}
-                  onClick={() => setMenuOpen(false)}
-                  className={`text-xl font-gothic relative group ${
-                    active ? 'text-accent' : 'text-light hover:text-accent'
-                  }`}
-                >
-                  {item}
-                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
-                    active ? 'w-full' : 'w-0 group-hover:w-full'
-                  }`}></span>
-                </Link>
-              )
-            })}
+        {/* Mobile Navigation Menu */}
+        {menuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-lg shadow-lg">
+            <div className="container mx-auto py-4 flex flex-col items-center">
+              {['Home', 'Gallery', 'Booking', 'About'].map((item, index) => {
+                const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`
+                const active = isActive(path)
+                
+                return (
+                  <Link 
+                    key={item} 
+                    href={path}
+                    onClick={() => setMenuOpen(false)}
+                    className={`text-xl font-gothic relative group py-2 my-1 ${
+                      active ? 'text-accent' : 'text-light hover:text-accent'
+                    }`}
+                  >
+                    {item}
+                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                      active ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}></span>
+                  </Link>
+                )
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </nav>
     </header>
   )
