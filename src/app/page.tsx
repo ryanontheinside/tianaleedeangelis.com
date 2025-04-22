@@ -88,7 +88,7 @@ export default function Home() {
         />
 
         <section className="mb-20 grid md:grid-cols-2 gap-16 items-center">
-          <div className="section-dark">
+          <div className="section-dark card-hover">
             <AnimatedText
               text="The Art"
               tag="h2"
@@ -131,13 +131,13 @@ export default function Home() {
                 linkText="View more"
                 linkUrl="/gallery"
                 effectStyle={item.id % 2 === 0 ? 'slide' : 'shine'}
-                className="rounded overflow-hidden shadow-xl"
+                className="rounded overflow-hidden shadow-xl card-hover"
               />
             ))}
           </div>
         </section>
 
-        <section className="mb-20 text-center section-dark overflow-hidden">
+        <section className="mb-20 text-center section-dark overflow-hidden card-hover">
           <div>
             <AnimatedText
               text="Book an Appointment"
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="relative inline-block">
               <Link 
                 href="/booking" 
-                className="btn btn-outline inline-block font-gothic font-bold animate-shimmer"
+                className="btn btn-outline inline-block font-gothic font-bold animate-shimmer link-card"
               >
                 Book Now
               </Link>
