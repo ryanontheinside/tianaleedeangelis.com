@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       <section className="mb-20 grid md:grid-cols-2 gap-16 items-center">
-        <div>
+        <div className="section-dark">
           <h2 className="text-3xl font-gothic font-bold mb-6 text-primary">The Art</h2>
           <p className="mb-4">
             Each tattoo is a unique piece of art created to reflect your vision and story. I specialize in fine line work featuring botanical elements, insects, mushrooms, skulls, and geometric patterns inspired by antique medical illustrations.
@@ -47,7 +47,7 @@ export default function Home() {
           </p>
           <Link 
             href="/gallery" 
-            className="inline-block px-6 py-3 bg-primary text-white font-gothic rounded hover:bg-opacity-90 transition-colors"
+            className="btn btn-primary inline-block font-gothic"
           >
             View Gallery
           </Link>
@@ -88,14 +88,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-20 text-center">
+      <section className="mb-20 text-center section-dark">
         <h2 className="text-3xl font-gothic font-bold mb-6 text-primary">Book an Appointment</h2>
         <p className="max-w-2xl mx-auto mb-8">
           Ready to bring your vision to life? Contact me to discuss your ideas and schedule a consultation.
         </p>
         <Link 
           href="/booking" 
-          className="inline-block px-8 py-4 bg-accent text-black font-gothic font-bold rounded hover:bg-opacity-90 transition-colors"
+          className="btn btn-accent inline-block font-gothic font-bold"
         >
           Book Now
         </Link>

@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-5xl font-gothic font-bold mb-8 text-center">About Tiana</h1>
         
         <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="relative aspect-square rounded overflow-hidden">
+          <div className="relative aspect-square rounded overflow-hidden border-2 border-accent">
             <Image 
               src="/images/tiana-profile-2.jpg" 
               alt="Tiana Lee DeAngelis" 
@@ -17,7 +17,7 @@ export default function About() {
             />
           </div>
           
-          <div>
+          <div className="section-dark">
             <h2 className="text-3xl font-gothic mb-4 text-primary">My Story</h2>
             <div className="space-y-4">
               <p>
@@ -43,19 +43,19 @@ export default function About() {
         <section className="mb-16">
           <h2 className="text-3xl font-gothic mb-6 text-center text-primary">My Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-secondary/5 p-6 rounded text-center">
+            <div className="section-dark text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Precision</h3>
               <p>Fine line work requires exceptional attention to detail and steady hands for clean, precise results.</p>
             </div>
             
-            <div className="bg-secondary/5 p-6 rounded text-center">
+            <div className="section-dark text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Research</h3>
               <p>I study antique illustrations, natural specimens, and scientific texts to create authentic, detailed designs.</p>
             </div>
             
-            <div className="bg-secondary/5 p-6 rounded text-center">
+            <div className="section-dark text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Collaboration</h3>
               <p>I work closely with clients to create personalized designs that reflect their interests and aesthetic vision.</p>
@@ -64,7 +64,7 @@ export default function About() {
         </section>
         
         <section>
-          <div className="bg-secondary/10 p-8 rounded">
+          <div className="section-dark">
             <h2 className="text-3xl font-gothic mb-6 text-center text-primary">Credentials</h2>
             <ul className="space-y-3">
               <li className="flex items-start">

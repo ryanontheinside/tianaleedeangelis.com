@@ -50,7 +50,7 @@ export default function Booking() {
       <h1 className="text-5xl font-gothic font-bold mb-8 text-center">Booking</h1>
       
       <div className="max-w-3xl mx-auto mb-16">
-        <div className="bg-secondary/10 p-6 rounded mb-12">
+        <div className="section-dark mb-12">
           <h2 className="text-2xl font-gothic mb-4 text-primary">Booking Process</h2>
           <ol className="list-decimal pl-5 space-y-2">
             <li>Fill out the inquiry form below with your tattoo idea</li>
@@ -61,7 +61,7 @@ export default function Booking() {
           </ol>
         </div>
         
-        <div className="bg-secondary/5 p-6 rounded mb-12">
+        <div className="section-dark mb-12">
           <h2 className="text-2xl font-gothic mb-4 text-primary">Pricing</h2>
           <p className="mb-2">Pricing varies based on size, complexity, and placement:</p>
           <ul className="list-disc pl-5 space-y-1">
@@ -74,18 +74,18 @@ export default function Booking() {
         </div>
         
         {submitted ? (
-          <div className="bg-primary/10 p-8 rounded text-center">
-            <h2 className="text-2xl font-gothic mb-4 text-primary">Thank You!</h2>
+          <div className="section-dark bg-primary/10 p-8 rounded text-center">
+            <h2 className="text-2xl font-gothic mb-4 text-accent">Thank You!</h2>
             <p className="mb-6">Your booking inquiry has been received. I'll contact you soon to discuss your tattoo idea.</p>
             <button 
               onClick={() => setSubmitted(false)}
-              className="px-6 py-2 bg-accent text-black font-gothic rounded hover:bg-opacity-90 transition-colors"
+              className="btn btn-accent font-gothic"
             >
               Submit Another Inquiry
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="section-dark space-y-6">
             <h2 className="text-2xl font-gothic mb-4 text-primary">Booking Inquiry</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
@@ -206,7 +206,7 @@ export default function Booking() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`px-8 py-3 bg-primary text-white font-gothic rounded hover:bg-opacity-90 transition-colors w-full md:w-auto ${isSubmitting ? 'opacity-70' : ''}`}
+              className={`btn btn-primary font-gothic w-full md:w-auto ${isSubmitting ? 'opacity-70' : ''}`}
             >
               {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
             </button>
@@ -214,7 +214,7 @@ export default function Booking() {
         )}
       </div>
       
-      <div className="text-center max-w-2xl mx-auto">
+      <div className="text-center max-w-2xl mx-auto section-dark">
         <h2 className="text-2xl font-gothic mb-4 text-primary">Direct Contact</h2>
         <p className="mb-6">
           Prefer to reach out directly? Contact me through any of these channels:

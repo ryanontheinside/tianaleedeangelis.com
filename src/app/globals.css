@@ -15,7 +15,7 @@
 }
 
 :root {
-  --background: #0a0a0a;
+  --background: #111111;
   --foreground: #ededed;
 }
 
@@ -32,9 +32,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  @apply text-accent hover:text-primary transition-colors duration-300;
+  @apply text-light hover:text-accent transition-colors duration-300;
 }
 
 .container {
   @apply px-4 mx-auto max-w-6xl;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-full transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-opacity-80;
+}
+
+.btn-accent {
+  @apply bg-accent text-secondary hover:bg-opacity-80;
+}
+
+.btn-outline {
+  @apply border-2 border-accent text-[#fceabb] hover:text-accent hover:border-opacity-80;
+}
+
+/* Section styling for better contrast */
+.section-dark {
+  @apply bg-secondary bg-opacity-30 rounded-lg p-6;
 }

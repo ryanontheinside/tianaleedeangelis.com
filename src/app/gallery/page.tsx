@@ -46,8 +46,8 @@ export default function Gallery() {
               onClick={() => setActiveCategory(category.id)}
               className={`px-4 py-2 rounded-full font-gothic transition-colors
                 ${activeCategory === category.id 
-                  ? 'bg-primary text-white' 
-                  : 'bg-secondary/20 hover:bg-secondary/40 text-foreground'}`}
+                  ? 'bg-primary text-light' 
+                  : 'bg-secondary/40 hover:bg-secondary/60 text-light hover:text-accent'}`}
             >
               {category.name}
             </button>
@@ -60,7 +60,7 @@ export default function Gallery() {
         {filteredWorks.map(work => (
           <div 
             key={work.id} 
-            className="aspect-square relative rounded overflow-hidden cursor-pointer group"
+            className="aspect-square relative rounded overflow-hidden cursor-pointer group border border-secondary"
             onClick={() => setSelectedImage(work.id)}
           >
             <Image 
@@ -69,8 +69,8 @@ export default function Gallery() {
               fill 
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <p className="text-white text-lg font-gothic">{work.alt}</p>
+            <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <p className="text-accent text-lg font-gothic">{work.alt}</p>
             </div>
           </div>
         ))}

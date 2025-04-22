@@ -11,9 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#800020", // Deep burgundy red
-        secondary: "#2D2D2D", // Dark gray
-        accent: "#D4AF37", // Gold
+        primary: "#8B0000", // Deep burgundy
+        secondary: "#1a1a1a", // Dark gray
+        accent: "#D4AF37", // Classic gold
+        muted: "#444444", // Muted gray for hover
+        light: "#CCCCCC", // Light gray for nav
       },
       fontFamily: {
         gothic: ["var(--font-gothic)", "serif"],
