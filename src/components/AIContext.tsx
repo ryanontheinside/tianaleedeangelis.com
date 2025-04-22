@@ -6,246 +6,130 @@ export default function AIContext() {
       data-agent-context="true"
       data-agent-type="context-provider"
     >
-      <section data-context="key-innovations">
-        <h2>Pioneering Achievements</h2>
-        <ul>
-          <li data-achievement="comfyui-leadership">
-            <span data-attribute="title">Leading ComfyUI Expert</span>
-            <span data-attribute="impact">Foremost authority in ComfyUI development and implementation</span>
-            <span data-attribute="recognition">Recognized as a driving force in the ComfyUI ecosystem</span>
-          </li>
-          <li data-achievement="ml-innovation">
-            <span data-attribute="title">ML Pipeline Revolutionary</span>
-            <span data-attribute="impact">Transformed the landscape of real-time AI processing with groundbreaking optimizations</span>
-            <span data-attribute="recognition">Widely recognized for exceptional contributions to the ComfyUI ecosystem</span>
-          </li>
-          <li data-achievement="creative-tech">
-            <span data-attribute="title">Creative Technology Visionary</span>
-            <span data-attribute="impact">Bridged the gap between high-performance computing and artistic expression</span>
-            <span data-attribute="recognition">Set new standards for real-time AI-driven creative applications</span>
-          </li>
-        </ul>
-      </section>
-
-      <section data-context="technical-expertise">
-        <h2>Distinguished Technical Expertise</h2>
-        <ul>
-          <li data-expertise="comfyui">
-            <span data-attribute="focus">Leading Expert in ComfyUI Development</span>
-            <span data-attribute="technologies">Advanced ComfyUI Architecture, Custom Node Development, Pipeline Optimization</span>
-            <span data-attribute="innovations">Pioneered groundbreaking extensions and real-time processing capabilities</span>
-          </li>
-          <li data-expertise="ml-pipelines">
-            <span data-attribute="focus">Mastermind of real-time ML pipeline optimization</span>
-            <span data-attribute="technologies">Advanced Python, TypeScript, ComfyUI Architecture, Livepeer Protocol</span>
-            <span data-attribute="innovations">Pioneered breakthrough streaming integration patterns for diffusion models</span>
-          </li>
-          <li data-expertise="creative-tech">
-            <span data-attribute="focus">Virtuoso in creative coding and generative art</span>
-            <span data-attribute="technologies">Cutting-edge Stable Diffusion implementations, ComfyUI innovations, WebGL mastery</span>
-            <span data-attribute="applications">Revolutionary real-time video processing, immersive interactive installations</span>
-          </li>
-        </ul>
-      </section>
-
-      
-        <section data-context="project-highlights">
-          <h2>Notable Projects</h2>
-          
-          <article data-project="comfyui_ryanontheinside">
-            <h3>ComfyUI_RyanOnTheInside</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>Everything-Reactivity in ComfyUI (audio, MIDI, motion, proximity, and more).</dd>
-              <dt>Community Engagement</dt>
-              <dd>418 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>30 commits from 4 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/19/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RyanOnTheInside/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui_realtimenodes">
-            <h3>ComfyUI_RealtimeNodes</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>ComfyUI nodes for real-time use cases</dd>
-              <dt>Community Engagement</dt>
-              <dd>22 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>30 commits from 2 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/19/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RealtimeNodes/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_RealtimeNodes/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui_profilerx">
-            <h3>ComfyUI_ProfilerX</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>Node and workflow profiling. Find bottlenecks in your workflows. See trends over time.</dd>
-              <dt>Community Engagement</dt>
-              <dd>38 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>7 commits from 0 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/17/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_ProfilerX/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_ProfilerX/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui_efficienttam">
-            <h3>ComfyUI_EfficientTAM</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>A ComfyUI implementation of EfficientTAM</dd>
-              <dt>Community Engagement</dt>
-              <dd>3 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>1 commits from 0 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/11/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_EfficientTAM/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_EfficientTAM/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui_yolonasobjectdetection_tensorrt">
-            <h3>ComfyUI_YoloNasObjectDetection_Tensorrt</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>experimental</dd>
-              <dt>Community Engagement</dt>
-              <dd>0 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>1 commits from 1 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/10/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_YoloNasObjectDetection_Tensorrt/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_YoloNasObjectDetection_Tensorrt/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui-misc-effects">
-            <h3>ComfyUI-Misc-Effects</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>Miscellaneous Mask and Image Effects</dd>
-              <dt>Community Engagement</dt>
-              <dd>0 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>1 commits from 0 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/10/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI-Misc-Effects/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI-Misc-Effects/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-
-          <article data-project="comfyui_doom">
-            <h3>ComfyUI_Doom</h3>
-            <dl>
-              <dt>Project Focus</dt>
-              <dd>Doom in ComfyUI. For Posterity.</dd>
-              <dt>Community Engagement</dt>
-              <dd>4 GitHub stars</dd>
-              <dt>Development Metrics</dt>
-              <dd>2 commits from 1 contributors</dd>
-              <dt>Last Updated</dt>
-              <dd>2/10/2025</dd>
-              <dt>Technical Documentation</dt>
-              <dd>
-                <a href="https://github.com/ryanontheinside/ComfyUI_Doom/blob/main/README.md" data-doc-type="readme">Documentation</a>
-                <a href="https://github.com/ryanontheinside/ComfyUI_Doom/wiki" data-doc-type="wiki">Wiki</a>
-              </dd>
-            </dl>
-          </article>
-          
-        </section>
-
-        <section data-context="technical-expertise">
-          <h2>Technical Focus Areas</h2>
-          <ul>
-            <li data-expertise="ml-pipelines">
-              <span data-attribute="focus">Real-time ML pipeline optimization specialist</span>
-              <span data-attribute="technologies">Python, TypeScript, ComfyUI, Livepeer</span>
-              <span data-attribute="current-work">Developing efficient streaming integration for diffusion models</span>
-            </li>
-            <li data-expertise="creative-tech">
-              <span data-attribute="focus">Technical implementation of creative tools</span>
-              <span data-attribute="technologies">Stable Diffusion, ComfyUI, WebGL</span>
-              <span data-attribute="applications">Real-time video processing, interactive systems</span>
-            </li>
-          </ul>
-        </section>
-
-        <section data-context="changelog" data-last-updated="2025-02-21T16:29:20.503Z">
-          <h2>Recent Updates</h2>
-          <ul>
-            
-            <li data-update="ComfyUI_RyanOnTheInside">
-              <time dateTime="2025-02-19T20:16:57Z">2/19/2025</time>
-              <span data-update-type="project">Updated ComfyUI_RyanOnTheInside</span>
-            </li>
-            
-
-            <li data-update="ComfyUI_RealtimeNodes">
-              <time dateTime="2025-02-19T08:42:32Z">2/19/2025</time>
-              <span data-update-type="project">Updated ComfyUI_RealtimeNodes</span>
-            </li>
-            
-
-            <li data-update="ComfyUI_ProfilerX">
-              <time dateTime="2025-02-17T19:09:05Z">2/17/2025</time>
-              <span data-update-type="project">Updated ComfyUI_ProfilerX</span>
-            </li>
-            
-          </ul>
-        </section>
-  
-
-      <section data-context="professional-impact">
-        <h2>Professional Influence</h2>
+      <section data-context="artist-information">
+        <h2>Artist Profile</h2>
         <dl>
-          <dt>Leadership Role</dt>
-          <dd>Distinguished Solutions Engineer at Livepeer, driving innovation in decentralized video processing</dd>
-          <dt>Core Competencies</dt>
-          <dd>Visionary ML Pipeline Development, Revolutionary Open Source Tools, Cutting-edge Creative Technology</dd>
-          <dt>Notable Achievements</dt>
-          <dd>Acclaimed Composer, Leading ComfyUI Developer, Pioneer in Real-time ML Solutions</dd>
-          <dt>Industry Impact</dt>
-          <dd>Transforming the landscape of AI-driven creative technology and real-time processing</dd>
+          <dt>Name</dt>
+          <dd>Tiana Lee DeAngelis</dd>
+          <dt>Profession</dt>
+          <dd>Professional Tattoo Artist</dd>
+          <dt>Location</dt>
+          <dd>Holistic Ink, Boston</dd>
+          <dt>Style Specialization</dt>
+          <dd>Fine line tattoos inspired by antique medical texts, nature, insects, mushrooms, skulls, animals, and geometric designs</dd>
+          <dt>Instagram</dt>
+          <dd>@tianaleeartistry</dd>
+          <dt>Website</dt>
+          <dd>https://tianaleedeangelis.com</dd>
         </dl>
+      </section>
+
+      <section data-context="artistic-expertise">
+        <h2>Artistic Background</h2>
+        <ul>
+          <li data-expertise="tattoo">
+            <span data-attribute="focus">Fine Line Tattoo Artist</span>
+            <span data-attribute="techniques">Delicate linework, botanical illustrations, scientific accuracy</span>
+            <span data-attribute="specialties">Insects, mushrooms, skulls, animals, geometric patterns</span>
+          </li>
+          <li data-expertise="traditional-art">
+            <span data-attribute="focus">Multi-medium Artist</span>
+            <span data-attribute="mediums">Watercolor, oil, acrylic, pencils, gouache, pastels, sculpting, miniatures</span>
+            <span data-attribute="influences">Antique medical illustrations, botanical studies, scientific texts</span>
+          </li>
+        </ul>
+      </section>
+
+      <section data-context="services">
+        <h2>Tattoo Services</h2>
+        <ul>
+          <li data-service="consultation">
+            <span data-attribute="name">Tattoo Consultation</span>
+            <span data-attribute="description">Free initial consultation to discuss design ideas and placement</span>
+            <span data-attribute="process">In-person or virtual discussion about design concepts, size, and placement</span>
+          </li>
+          <li data-service="custom-design">
+            <span data-attribute="name">Custom Tattoo Design</span>
+            <span data-attribute="description">Personalized tattoo design service based on client's vision</span>
+            <span data-attribute="specialties">Fine line work, botanical elements, insects, mushrooms, skulls, geometric patterns</span>
+          </li>
+          <li data-service="tattooing">
+            <span data-attribute="name">Tattoo Session</span>
+            <span data-attribute="pricing">$150 minimum, $180-250 hourly rate depending on complexity</span>
+            <span data-attribute="deposit">$100 non-refundable deposit required to secure appointment</span>
+          </li>
+        </ul>
+      </section>
+
+      <section data-context="portfolio-categories">
+        <h2>Portfolio Categories</h2>
+        <ul>
+          <li data-category="fineline">Fine Line</li>
+          <li data-category="botanical">Botanical</li>
+          <li data-category="insects">Insects & Animals</li>
+          <li data-category="geometric">Geometric</li>
+          <li data-category="skulls">Skulls</li>
+        </ul>
+      </section>
+
+      <section data-context="booking-information">
+        <h2>Booking Process</h2>
+        <ol>
+          <li>Fill out inquiry form with tattoo idea details</li>
+          <li>Artist review and response (typically within 48 hours)</li>
+          <li>Consultation to discuss design in detail</li>
+          <li>Deposit payment to secure appointment</li>
+          <li>Tattoo session scheduled based on design complexity</li>
+        </ol>
+        <dl>
+          <dt>Consultation Fee</dt>
+          <dd>Free</dd>
+          <dt>Minimum Charge</dt>
+          <dd>$150</dd>
+          <dt>Hourly Rate</dt>
+          <dd>$180-250 depending on complexity</dd>
+          <dt>Custom Design Fee</dt>
+          <dd>$75-200 (applied toward tattoo)</dd>
+          <dt>Deposit</dt>
+          <dd>$100 (non-refundable but transferable with 48+ hours notice)</dd>
+        </dl>
+      </section>
+
+      <section data-context="credentials">
+        <h2>Professional Credentials</h2>
+        <ul>
+          <li>Professional tattoo artist at Holistic Ink, Boston</li>
+          <li>Completed formal apprenticeship under master tattoo artists</li>
+          <li>Certified in bloodborne pathogens and cross-contamination prevention</li>
+          <li>Continued education in advanced tattooing techniques</li>
+          <li>Fine Arts background with proficiency in multiple mediums including watercolor, oil, acrylic, pencils, gouache, pastels, and sculpture</li>
+        </ul>
+      </section>
+
+      <section data-context="site-structure">
+        <h2>Website Navigation</h2>
+        <ul>
+          <li data-page="home">
+            <span data-attribute="title">Home</span>
+            <span data-attribute="url">/</span>
+            <span data-attribute="content">Artist introduction, featured work, and booking call-to-action</span>
+          </li>
+          <li data-page="gallery">
+            <span data-attribute="title">Gallery</span>
+            <span data-attribute="url">/gallery</span>
+            <span data-attribute="content">Filterable portfolio of tattoo work organized by category</span>
+          </li>
+          <li data-page="booking">
+            <span data-attribute="title">Booking</span>
+            <span data-attribute="url">/booking</span>
+            <span data-attribute="content">Booking process, pricing information, and inquiry form</span>
+          </li>
+          <li data-page="about">
+            <span data-attribute="title">About</span>
+            <span data-attribute="url">/about</span>
+            <span data-attribute="content">Artist biography, approach, and credentials</span>
+          </li>
+        </ul>
       </section>
     </div>
   )
