@@ -77,32 +77,32 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {menuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-lg shadow-lg">
-            <div className="container mx-auto py-4 flex flex-col items-center">
-              {['Home', 'Gallery', 'Booking', 'About'].map((item, index) => {
-                const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`
-                const active = isActive(path)
-                
-                return (
-                  <Link 
-                    key={item} 
-                    href={path}
-                    onClick={() => setMenuOpen(false)}
-                    className={`text-xl font-gothic relative group py-2 my-1 ${
-                      active ? 'text-accent' : 'text-light hover:text-accent'
-                    }`}
-                  >
-                    {item}
-                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
-                      active ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}></span>
-                  </Link>
-                )
-              })}
-            </div>
+        <div className={`md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-lg shadow-lg transition-all duration-300 overflow-hidden ${
+          menuOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <div className="container mx-auto py-4 flex flex-col items-center">
+            {['Home', 'Gallery', 'Booking', 'About'].map((item, index) => {
+              const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`
+              const active = isActive(path)
+              
+              return (
+                <Link 
+                  key={item} 
+                  href={path}
+                  onClick={() => setMenuOpen(false)}
+                  className={`text-xl font-gothic relative group py-2 my-1 ${
+                    active ? 'text-accent' : 'text-light hover:text-accent'
+                  }`}
+                >
+                  {item}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-accent transition-all duration-300 ${
+                    active ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
+                </Link>
+              )
+            })}
           </div>
-        )}
+        </div>
       </nav>
     </header>
   )
