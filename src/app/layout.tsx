@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import JsonLd from '@/components/JsonLd'
 import AIContext from '@/components/AIContext'
+import PageTransition from '@/components/PageTransition'
 
 const gothic = Cinzel_Decorative({ 
   subsets: ['latin'],
@@ -68,7 +69,9 @@ export default function RootLayout({
         <AIContext />
         <Header />
         <div className="pt-16">
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
         </div>
       </body>
     </html>
