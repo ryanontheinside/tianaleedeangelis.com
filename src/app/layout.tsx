@@ -19,12 +19,12 @@ const sans = EB_Garamond({
 
 export const metadata: Metadata = {
   title: 'Tiana Lee DeAngelis - Tattoo Artist',
-  description: 'Portfolio and booking information for Tiana Lee DeAngelis, professional tattoo artist at Holistic Ink',
-  keywords: ['tattoo', 'tattoo artist', 'Tiana Lee DeAngelis', 'Holistic Ink', 'gothic tattoo', 'Boston tattoo'],
+  description: 'Portfolio and booking information for Tiana Lee DeAngelis, professional tattoo artist at Holistic Ink specializing in fine line work inspired by antique medical texts and nature',
+  keywords: ['tattoo', 'tattoo artist', 'Tiana Lee DeAngelis', 'Holistic Ink', 'fine line tattoo', 'botanical tattoo', 'insects', 'mushrooms', 'Boston tattoo'],
   authors: [{ name: 'Tiana Lee DeAngelis' }],
   openGraph: {
     title: 'Tiana Lee DeAngelis - Tattoo Artist',
-    description: 'Professional tattoo artist at Holistic Ink specializing in gothic and fine line designs',
+    description: 'Professional tattoo artist at Holistic Ink specializing in fine line designs inspired by nature, antique medical illustrations, and geometric patterns',
     url: 'https://tianaleedeangelis.com',
     siteName: 'Tiana Lee DeAngelis',
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Tiana Lee DeAngelis - Tattoo Artist',
-    description: 'Professional tattoo artist at Holistic Ink specializing in gothic and fine line designs',
+    description: 'Professional tattoo artist at Holistic Ink specializing in fine line designs inspired by nature, antique medical illustrations, and geometric patterns',
     creator: '@tianaleedeangelis',
     images: ['/og-image.png'],
   },

@@ -31,7 +31,7 @@ export default function Home() {
         </h1>
         <h2 className="text-2xl text-accent mb-6">Tattoo Artist</h2>
         <p className="text-xl max-w-2xl mb-6">
-          Professional tattoo artist based at Holistic Ink in Boston, specializing in gothic designs, fine line work, and custom art.
+          Professional tattoo artist based at Holistic Ink in Boston, specializing in fine line work inspired by antique medical texts, nature, and geometric designs.
         </p>
         <SocialLinks />
       </section>
@@ -40,7 +40,7 @@ export default function Home() {
         <div>
           <h2 className="text-3xl font-gothic font-bold mb-6 text-primary">The Art</h2>
           <p className="mb-4">
-            Each tattoo is a unique piece of art created to reflect your vision and story. I specialize in gothic and darkly elegant designs that combine intricate linework with rich symbolism.
+            Each tattoo is a unique piece of art created to reflect your vision and story. I specialize in fine line work featuring botanical elements, insects, mushrooms, skulls, and geometric patterns inspired by antique medical illustrations.
           </p>
           <p className="mb-6">
             My approach blends technical precision with artistic sensitivity, ensuring every piece is both beautiful and meaningful.

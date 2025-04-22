@@ -6,22 +6,23 @@ import Image from 'next/image'
 // This would normally be fetched from a CMS or database
 const tattooCategories = [
   { id: 'all', name: 'All Work' },
-  { id: 'gothic', name: 'Gothic' },
   { id: 'fineline', name: 'Fine Line' },
-  { id: 'blackwork', name: 'Blackwork' },
-  { id: 'floral', name: 'Floral' },
+  { id: 'botanical', name: 'Botanical' },
+  { id: 'insects', name: 'Insects & Animals' },
+  { id: 'geometric', name: 'Geometric' },
+  { id: 'skulls', name: 'Skulls' },
 ]
 
 // Mock data - would be replaced with actual images
 const tattooWorks = [
-  { id: 1, src: '/images/tattoo-1.jpg', alt: 'Gothic rose tattoo', categories: ['gothic', 'floral'] },
-  { id: 2, src: '/images/tattoo-2.jpg', alt: 'Fine line portrait', categories: ['fineline'] },
-  { id: 3, src: '/images/tattoo-3.jpg', alt: 'Blackwork geometric design', categories: ['blackwork'] },
-  { id: 4, src: '/images/tattoo-4.jpg', alt: 'Gothic cathedral', categories: ['gothic'] },
-  { id: 5, src: '/images/tattoo-5.jpg', alt: 'Fine line botanical', categories: ['fineline', 'floral'] },
-  { id: 6, src: '/images/tattoo-6.jpg', alt: 'Blackwork skull', categories: ['blackwork', 'gothic'] },
-  { id: 7, src: '/images/tattoo-7.jpg', alt: 'Fine line snake', categories: ['fineline'] },
-  { id: 8, src: '/images/tattoo-8.jpg', alt: 'Gothic moth', categories: ['gothic'] },
+  { id: 1, src: '/images/tattoo-1.jpg', alt: 'Fine line botanical illustration', categories: ['fineline', 'botanical'] },
+  { id: 2, src: '/images/tattoo-2.jpg', alt: 'Antique medical illustration', categories: ['fineline'] },
+  { id: 3, src: '/images/tattoo-3.jpg', alt: 'Geometric design', categories: ['geometric'] },
+  { id: 4, src: '/images/tattoo-4.jpg', alt: 'Mushroom illustration', categories: ['botanical'] },
+  { id: 5, src: '/images/tattoo-5.jpg', alt: 'Anatomical skull', categories: ['fineline', 'skulls'] },
+  { id: 6, src: '/images/tattoo-6.jpg', alt: 'Beetle illustration', categories: ['insects', 'fineline'] },
+  { id: 7, src: '/images/tattoo-7.jpg', alt: 'Fine line snake', categories: ['fineline', 'insects'] },
+  { id: 8, src: '/images/tattoo-8.jpg', alt: 'Geometric moth', categories: ['insects', 'geometric'] },
 ]
 
 export default function Gallery() {

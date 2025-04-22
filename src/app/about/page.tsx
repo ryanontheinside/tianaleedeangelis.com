@@ -21,13 +21,16 @@ export default function About() {
             <h2 className="text-3xl font-gothic mb-4 text-primary">My Story</h2>
             <div className="space-y-4">
               <p>
-                I'm Tiana Lee DeAngelis, a tattoo artist based in Boston, specializing in gothic, fine line, and custom designs. My journey in tattooing began with a lifelong passion for art and drawing, which evolved into a professional career after completing a formal apprenticeship.
+                I'm Tiana Lee DeAngelis, a tattoo artist based in Boston, specializing in fine line work inspired by antique medical texts, nature, and geometric designs. My journey in tattooing began with a lifelong passion for art and drawing, which evolved into a professional career after completing a formal apprenticeship.
+              </p>
+              <p>
+                Before focusing on tattooing, I honed my skills across multiple mediums including watercolor, oil, acrylic, pencils, gouache, pastels, sculpting, and miniatures. This diverse artistic background gives me a unique perspective and versatility in my approach to tattoo design.
               </p>
               <p>
                 Working at Holistic Ink has allowed me to focus on creating deeply personal, meaningful art for my clients. I believe that tattoos are more than just decoration – they're powerful symbols and expressions of identity.
               </p>
               <p>
-                My style draws inspiration from gothic art, architecture, and symbolism, blended with contemporary fine line techniques. Each piece I create is a collaboration between my artistic vision and my client's personal story.
+                My style draws inspiration from vintage scientific illustrations, botanical studies, and the intricate details found in nature. I'm particularly drawn to insects, mushrooms, animal anatomy, and geometric patterns, which I render with precise, delicate lines to create elegant, timeless pieces.
               </p>
             </div>
             
@@ -42,20 +45,20 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-secondary/5 p-6 rounded text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
-              <h3 className="font-gothic text-xl mb-3">Personalization</h3>
-              <p>Every tattoo begins with understanding your vision, story, and aesthetic preferences.</p>
+              <h3 className="font-gothic text-xl mb-3">Precision</h3>
+              <p>Fine line work requires exceptional attention to detail and steady hands for clean, precise results.</p>
             </div>
             
             <div className="bg-secondary/5 p-6 rounded text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
-              <h3 className="font-gothic text-xl mb-3">Craftsmanship</h3>
-              <p>Meticulous attention to detail and clean, precise techniques for lasting quality.</p>
+              <h3 className="font-gothic text-xl mb-3">Research</h3>
+              <p>I study antique illustrations, natural specimens, and scientific texts to create authentic, detailed designs.</p>
             </div>
             
             <div className="bg-secondary/5 p-6 rounded text-center">
               <div className="text-accent text-4xl mb-4">✦</div>
-              <h3 className="font-gothic text-xl mb-3">Experience</h3>
-              <p>Creating a comfortable, respectful environment for a positive tattoo experience.</p>
+              <h3 className="font-gothic text-xl mb-3">Collaboration</h3>
+              <p>I work closely with clients to create personalized designs that reflect their interests and aesthetic vision.</p>
             </div>
           </div>
         </section>
@@ -82,7 +85,7 @@ export default function About() {
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>
-                <span>Fine Arts background with specialization in illustration and design</span>
+                <span>Fine Arts background with proficiency in multiple mediums including watercolor, oil, acrylic, pencils, gouache, pastels, and sculpture</span>
               </li>
             </ul>
           </div>
