@@ -37,7 +37,7 @@ export default function Home() {
         particleCount={75} 
         particleSpeed={0.3}
         particleColor="#D4AF37"
-        scrollModifier={0.108}
+        scrollModifier={0.008}
       />
       
       <div className="container mx-auto px-6 py-16">
