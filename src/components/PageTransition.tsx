@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, ReactNode } from 'react'
+import { useEffect, useState, ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
 
 interface PageTransitionProps {
@@ -9,35 +9,45 @@ interface PageTransitionProps {
 
 export default function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname()
-  const [displayChildren, setDisplayChildren] = useState(children)
-  const [transitionStage, setTransitionStage] = useState('fadeIn')
+  const [isClient, setIsClient] = useState(false)
+  
+  // Only enable transitions after initial load
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+  
+  if (!isClient) return <>{children}</>
+  
+  return (
+    <TransitionWrapper key={pathname}>
+      {children}
+    </TransitionWrapper>
+  )
+}
+
+function TransitionWrapper({ children }: { children: ReactNode }) {
+  const [isVisible, setIsVisible] = useState(false)
   
   useEffect(() => {
-    // If the route has changed
-    if (children !== displayChildren) {
-      // Start fade out transition
-      setTransitionStage('fadeOut')
-      
-      // After the fade out, swap the children and fade in
-      const fadeOutTimeout = setTimeout(() => {
-        setDisplayChildren(children)
-        // Add a small delay before fading back in to ensure smoother transitions
-        setTimeout(() => {
-          setTransitionStage('fadeIn')
-        }, 100)
-      }, 300) // Reduced from 500ms for faster transitions
-      
-      return () => clearTimeout(fadeOutTimeout)
-    }
-  }, [children, displayChildren, pathname])
+    // Start with hidden content
+    setIsVisible(false)
+    
+    // Then immediately trigger fade-in
+    const timer = setTimeout(() => {
+      setIsVisible(true)
+    }, 10)
+    
+    return () => clearTimeout(timer)
+  }, [])
   
   return (
     <div
-      className={`transition-opacity duration-300 ${
-        transitionStage === 'fadeIn' ? 'opacity-100' : 'opacity-0'
-      }`}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transition: 'opacity 0.3s ease-in-out',
+      }}
     >
-      {displayChildren}
+      {children}
     </div>
   )
-} 
+}
