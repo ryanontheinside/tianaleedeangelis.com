@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // Replace with your actual IP address (check https://ifconfig.me or similar)
-const ALLOWED_IPS = ['73.182.166.220', '127.0.0.1', 'localhost'];
+const ALLOWED_IPS = [''];
 
 export function middleware(request: NextRequest) {
   const forwarded = request.headers.get('x-forwarded-for');
