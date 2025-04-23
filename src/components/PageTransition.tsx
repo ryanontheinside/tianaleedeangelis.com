@@ -21,8 +21,11 @@ export default function PageTransition({ children }: PageTransitionProps) {
       // After the fade out, swap the children and fade in
       const fadeOutTimeout = setTimeout(() => {
         setDisplayChildren(children)
-        setTransitionStage('fadeIn')
-      }, 500) // This should match the CSS transition duration
+        // Add a small delay before fading back in to ensure smoother transitions
+        setTimeout(() => {
+          setTransitionStage('fadeIn')
+        }, 100)
+      }, 300) // Reduced from 500ms for faster transitions
       
       return () => clearTimeout(fadeOutTimeout)
     }
@@ -30,7 +33,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
   
   return (
     <div
-      className={`transition-opacity duration-500 ${
+      className={`transition-opacity duration-300 ${
         transitionStage === 'fadeIn' ? 'opacity-100' : 'opacity-0'
       }`}
     >
