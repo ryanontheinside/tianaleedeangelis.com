@@ -132,7 +132,7 @@ export default function Home() {
                 description={item.desc}
                 linkText="View more"
                 linkUrl="/gallery"
-                effectStyle={item.id % 2 === 0 ? 'slide' : 'shine'}
+                effectStyle="shine"
                 className="rounded overflow-hidden shadow-xl card-hover"
               />
             ))}
