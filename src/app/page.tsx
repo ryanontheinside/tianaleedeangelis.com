@@ -95,7 +95,7 @@ export default function Home() {
               text="The Art"
               tag="h2"
               // animation="typewriter"
-              className="text-3xl font-gothic font-bold mb-6 text-primary"
+              className="text-3xl font-gothic font-bold mb-6 text-primary tracking-wider"
             />
             
             <p className="mb-4 animate-fade-in">
@@ -142,11 +142,11 @@ export default function Home() {
         <section className="mb-20 text-center section-dark overflow-hidden card-hover">
           <div>
             <AnimatedText
-              text="Book an Appointment"
+              text="B00k an Appointment"
               tag="h2"
               // animation="wave"
               speed="medium"
-              className="text-3xl font-gothic font-bold mb-6 text-primary"
+              className="text-3xl font-gothic font-bold mb-6 text-primary tracking-wider no-ligature"
             />
             
             <p className="max-w-2xl mx-auto mb-8 animate-fade-in">
@@ -156,7 +156,7 @@ export default function Home() {
             <div className="relative inline-block">
               <Link 
                 href="/booking" 
-                className="btn btn-outline inline-block font-gothic font-bold animate-shimmer link-card"
+                className="btn btn-outline inline-block font-gothic font-bold animate-shimmer link-card hover:shadow-glow"
               >
                 Book Now
               </Link>
