@@ -17,7 +17,7 @@
 :root {
   --background: #111111;
   --foreground: #ededed;
-  --primary: #8B0000;
+  --primary: #b91e2f;
   --secondary: #1a1a1a;
   --accent: #D4AF37;
   --muted: #444444;
@@ -84,6 +84,31 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @apply font-gothic text-primary;
+}
+
+/* Accent underline animation for headings with tracking-wider */
+h2.tracking-wider {
+  position: relative;
+}
+
+h2.tracking-wider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+h2.tracking-wider:hover::after {
+  width: 100%;
+}
+
+/* Disable ligatures for specific text */
+.no-ligature {
+  font-variant-ligatures: none;
 }
 
 a {
@@ -206,6 +231,12 @@ a {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Gold glow effect for buttons */
+.hover\:shadow-glow:hover {
+  box-shadow: 0 0 10px #d6af36, 0 0 20px #d6af36;
+  transition: box-shadow 0.3s ease;
 }
 
 /* Animation helpers */
