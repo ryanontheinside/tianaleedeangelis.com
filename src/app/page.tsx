@@ -90,7 +90,7 @@ export default function Home() {
         />
 
         <section className="mb-20 grid md:grid-cols-2 gap-16 items-center">
-          <div className="section-dark card-hover">
+          <div className="section-dark text-card-hover">
             <AnimatedText
               text="The Art"
               tag="h2"
@@ -139,14 +139,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-20 text-center section-dark overflow-hidden card-hover">
+        <section className="mb-20 text-center section-dark overflow-hidden text-card-hover">
           <div>
             <AnimatedText
               text="B00k an Appointment"
               tag="h2"
               // animation="wave"
               speed="medium"
-              className="text-3xl font-gothic font-bold mb-6 text-primary tracking-wider no-ligature"
+              className="text-3xl font-gothic font-bold mb-6 text-primary tracking-wider"
             />
             
             <p className="max-w-2xl mx-auto mb-8 animate-fade-in">

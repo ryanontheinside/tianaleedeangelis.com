@@ -17,8 +17,8 @@ export default function About() {
             />
           </div>
           
-          <div className="section-dark">
-            <h2 className="text-3xl font-gothic mb-4 text-primary">My Story</h2>
+          <div className="section-dark text-card-hover">
+            <h2 className="text-3xl font-gothic mb-4 text-primary tracking-wider">My Story</h2>
             <div className="space-y-4">
               <p>
                 I'm Tiana Lee DeAngelis, but you can call me Tina! I'm a tattoo artist based in Boston, specializing in fine line work inspired by antique medical texts, nature, and geometric designs. My journey in tattooing began with a lifelong passion for art and drawing, which evolved into a professional career after completing a formal apprenticeship.
@@ -43,19 +43,19 @@ export default function About() {
         <section className="mb-16">
           <h2 className="text-3xl font-gothic mb-6 text-center text-primary">My Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="section-dark text-center">
+            <div className="section-dark text-center text-card-hover">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Precision</h3>
               <p>Fine line work requires exceptional attention to detail and steady hands for clean, precise results.</p>
             </div>
             
-            <div className="section-dark text-center">
+            <div className="section-dark text-center text-card-hover">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Research</h3>
               <p>I study antique illustrations, natural specimens, and scientific texts to create authentic, detailed designs.</p>
             </div>
             
-            <div className="section-dark text-center">
+            <div className="section-dark text-center text-card-hover">
               <div className="text-accent text-4xl mb-4">✦</div>
               <h3 className="font-gothic text-xl mb-3">Collaboration</h3>
               <p>I work closely with clients to create personalized designs that reflect their interests and aesthetic vision.</p>
@@ -64,8 +64,8 @@ export default function About() {
         </section>
         
         <section>
-          <div className="section-dark">
-            <h2 className="text-3xl font-gothic mb-6 text-center text-primary">Credentials</h2>
+          <div className="section-dark text-card-hover">
+            <h2 className="text-3xl font-gothic mb-6 text-center text-primary tracking-wider">Credentials</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>

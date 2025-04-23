@@ -50,8 +50,8 @@ export default function Booking() {
       <h1 className="text-5xl font-gothic font-bold mb-8 text-center">Booking</h1>
       
       <div className="max-w-3xl mx-auto mb-16">
-        <div className="section-dark mb-12">
-          <h2 className="text-2xl font-gothic mb-4 text-primary">Booking Process</h2>
+        <div className="section-dark text-card-hover mb-12">
+          <h2 className="text-2xl font-gothic mb-4 text-primary tracking-wider">Booking Process</h2>
           <ol className="list-decimal pl-5 space-y-2">
             <li>Fill out the inquiry form below with your tattoo idea</li>
             <li>I'll review your request and contact you (usually within 48 hours)</li>
@@ -61,8 +61,8 @@ export default function Booking() {
           </ol>
         </div>
         
-        <div className="section-dark mb-12">
-          <h2 className="text-2xl font-gothic mb-4 text-primary">Pricing</h2>
+        <div className="section-dark text-card-hover mb-12">
+          <h2 className="text-2xl font-gothic mb-4 text-primary tracking-wider">Pricing</h2>
           <p className="mb-2">Pricing varies based on size, complexity, and placement:</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Consultation: Free</li>
@@ -74,8 +74,8 @@ export default function Booking() {
         </div>
         
         {submitted ? (
-          <div className="section-dark bg-primary/10 p-8 rounded text-center">
-            <h2 className="text-2xl font-gothic mb-4 text-accent">Thank You!</h2>
+          <div className="section-dark bg-primary/10 p-8 rounded text-center text-card-hover">
+            <h2 className="text-2xl font-gothic mb-4 text-accent tracking-wider">Thank You!</h2>
             <p className="mb-6">Your booking inquiry has been received. I'll contact you soon to discuss your tattoo idea.</p>
             <button 
               onClick={() => setSubmitted(false)}
@@ -85,8 +85,8 @@ export default function Booking() {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="section-dark space-y-6">
-            <h2 className="text-2xl font-gothic mb-4 text-primary">Booking Inquiry</h2>
+          <form onSubmit={handleSubmit} className="section-dark space-y-6 text-card-hover">
+            <h2 className="text-2xl font-gothic mb-4 text-primary tracking-wider">Booking Inquiry</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -214,8 +214,8 @@ export default function Booking() {
         )}
       </div>
       
-      <div className="text-center max-w-2xl mx-auto section-dark">
-        <h2 className="text-2xl font-gothic mb-4 text-primary">Direct Contact</h2>
+      <div className="text-center max-w-2xl mx-auto section-dark text-card-hover">
+        <h2 className="text-2xl font-gothic mb-4 text-primary tracking-wider">Direct Contact</h2>
         <p className="mb-6">
           Prefer to reach out directly? Contact me through any of these channels:
         </p>

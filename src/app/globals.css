@@ -184,7 +184,7 @@ a {
   box-shadow: 0 10px 25px rgba(212,175,55,0.25);
 }
 
-/* Accent element animation that can be added to any card */
+/* Accent element animation for image cards */
 .card-hover::after {
   content: '';
   position: absolute;
@@ -203,8 +203,20 @@ a {
   transform-origin: left;
 }
 
-/* Heading underline inside cards */
-.card-hover h2.tracking-wider::after {
+/* Text Card - for cards with headings but no bottom border */
+.text-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.25);
+}
+
+/* Heading underline inside text cards */
+.text-card-hover h2.tracking-wider::after {
   content: '';
   position: absolute;
   left: 0;
@@ -215,7 +227,7 @@ a {
   transition: width 0.3s ease;
 }
 
-.card-hover:hover h2.tracking-wider::after {
+.text-card-hover:hover h2.tracking-wider::after {
   width: 100%;
 }
 
