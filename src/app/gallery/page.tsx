@@ -60,7 +60,7 @@ export default function Gallery() {
         {filteredWorks.map(work => (
           <div 
             key={work.id} 
-            className="aspect-square relative rounded overflow-hidden cursor-pointer group border border-secondary"
+            className="aspect-square relative rounded overflow-hidden cursor-pointer group border border-secondary card-hover"
             onClick={() => setSelectedImage(work.id)}
           >
             <Image 
