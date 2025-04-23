@@ -102,7 +102,8 @@ h2.tracking-wider::after {
   transition: width 0.3s ease;
 }
 
-h2.tracking-wider:hover::after {
+/* Trigger heading underline on card hover instead of heading hover */
+.section-dark:hover h2.tracking-wider::after {
   width: 100%;
 }
 

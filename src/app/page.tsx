@@ -84,7 +84,7 @@ export default function Home() {
 
         <ScrollingBanner 
           text="FINE LINE TATTOOS • CUSTOM DESIGNS • TATTOO ARTIST • BOSTON MA • HOLISTIC INK" 
-          className="py-8 text-2xl font-gothic text-accent opacity-80"
+          className="py-8 pb-12 text-2xl font-gothic text-accent opacity-80"
           speed={40}
           repeat={3}
         />
