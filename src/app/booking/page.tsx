@@ -47,7 +47,7 @@ export default function Booking() {
 
   return (
     <main className="container mx-auto px-6 py-16">
-      <h1 className="text-5xl font-gothic font-bold mb-8 text-center">Booking</h1>
+      <h1 className="text-5xl font-gothic font-bold mb-8 text-primary text-center">Booking</h1>
       
       <div className="max-w-3xl mx-auto mb-16">
         <div className="section-dark text-card-hover mb-12">
