@@ -35,6 +35,14 @@ const nextConfig = {
           {
             key: 'Last-Modified',
             value: new Date().toUTCString()
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'all'
+          },
+          {
+            key: 'X-Vercel-Cache-Control-Allow-Bot',
+            value: 'true'
           }
         ]
       }
