@@ -1,7 +1,0 @@
-This directory will contain the following images:
-- tiana-profile.jpg (profile photo for home page)
-- tiana-profile-2.jpg (profile photo for about page)
-- tattoo-1.jpg through tattoo-8.jpg (portfolio samples)
-- bg-texture.png (background texture)
-
-Please add actual image files before deployment. 
