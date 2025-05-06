@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 // This would normally be fetched from a CMS or database
@@ -13,21 +13,31 @@ const tattooCategories = [
   { id: 'skulls', name: 'Skulls' },
 ]
 
-// Mock data - would be replaced with actual images
-const tattooWorks = [
-  { id: 1, src: '/images/tattoo-1.jpg', alt: 'Fine line botanical illustration', categories: ['fineline', 'botanical'] },
-  { id: 2, src: '/images/tattoo-2.jpg', alt: 'Antique medical illustration', categories: ['fineline'] },
-  { id: 3, src: '/images/tattoo-3.jpg', alt: 'Geometric design', categories: ['geometric'] },
-  { id: 4, src: '/images/tattoo-4.jpg', alt: 'Mushroom illustration', categories: ['botanical'] },
-  { id: 5, src: '/images/tattoo-5.jpg', alt: 'Anatomical skull', categories: ['fineline', 'skulls'] },
-  { id: 6, src: '/images/tattoo-6.jpg', alt: 'Beetle illustration', categories: ['insects', 'fineline'] },
-  { id: 7, src: '/images/tattoo-7.jpg', alt: 'Fine line snake', categories: ['fineline', 'insects'] },
-  { id: 8, src: '/images/tattoo-8.jpg', alt: 'Geometric moth', categories: ['insects', 'geometric'] },
-]
+interface TattooWork {
+  id: string
+  src: string
+  alt: string
+  categories: string[]
+}
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('all')
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const [tattooWorks, setTattooWorks] = useState<TattooWork[]>([])
+
+  useEffect(() => {
+    const loadImages = async () => {
+      try {
+        const response = await fetch('/api/gallery')
+        const data = await response.json()
+        setTattooWorks(data.works)
+      } catch (error) {
+        console.error('Error loading images:', error)
+      }
+    }
+    
+    loadImages()
+  }, [])
 
   const filteredWorks = activeCategory === 'all' 
     ? tattooWorks 
