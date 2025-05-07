@@ -33,6 +33,16 @@ const KNOWN_BOTS = [
 
 // Middleware function
 export function middleware(request: NextRequest) {
+  // TEMPORARY: Return 503 Service Unavailable for all requests
+  return new NextResponse('Service Temporarily Unavailable', {
+    status: 503,
+    headers: {
+      'Content-Type': 'text/plain',
+      'Retry-After': '3600'
+    }
+  });
+
+  /* Original implementation:
   const userAgent = request.headers.get('user-agent')?.toLowerCase() || '';
   
   // Check if the request is from a bot
@@ -51,6 +61,7 @@ export function middleware(request: NextRequest) {
   
   // For non-bot traffic, continue with normal processing
   return NextResponse.next();
+  */
 }
 
 // Configure which routes should apply this middleware
